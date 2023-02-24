@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+}
+
+div#alert {
+	width: 200px;
+	height: 30px;
+	line-height: 10px;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgb(111, 213, 121);
+	border-radius: 20px;
+	padding: 10px 20px;
+	text-align: center;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+	transition: 0.5s top ease;
+	color: rgb(35, 77, 39);
+	z-index: 1;
+}
+
+div#container {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 300px;
+	padding: 10px 0;
+}
+
+div#container button#help {
+	width: auto;
+	height: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: none;
+	outline: none;
+	margin: 10px 10px 0 0;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+div#container div#helpbox {
+	display: inline-block;
+	position: absolute;
+	padding: 20px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 1;
+	backdrop-filter: blur(5px);
+}
+
+div#container::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera*/
+}
+
+div#container div#helpbox.hide {
+	display: none;
+}
+
+div#container div#helpbox button#close {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin-top: 10px;
+	margin-right: 10px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+div#container img#symbol {
+	padding-bottom: 10px;
+}
+
+div#container div#form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	gap: 10px;
+}
+
+div#container input.id,
+div#container input.pw {
+	width: 150px;
+	height: 30px;
+	outline: none;
+	margin-bottom: 5px;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	color: #333;
+}
+
+div#container input.pw {
+	margin-bottom: 0;
+	padding-right: 35px;
+}
+
+div#container button#pw-vis,
+div#container button#pw-invis {
+	position: absolute;
+	right: 0;
+	width: auto;
+	height: 30px;
+	padding-top: 3px;
+	padding-right: 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+div#container button.hide {
+	display: none;
+}
+
+div#container button#save {
+	width: 150px;
+	height: 70px;
+	background-color: #266ed4;
+	color: white;
+	border: none;
+	outline: none;
+	padding: 10px;
+	cursor: pointer;
+	line-height: 10px;
+}
+
+.hide {
+	display: none;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #000;
+}

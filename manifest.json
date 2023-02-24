@@ -1,0 +1,23 @@
+{
+	"name": "SCNU Auto-Login",
+	"description": "향림통 회원 정보를 입력하면 자동으로 로그인합니다. 이 확장 프로그램은 사용자의 개인 정보를 무단으로 수집하지 않습니다.",
+	"version": "1.10",
+	"manifest_version": 3,
+	"permissions": ["storage", "tabs"],
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://login.scnu.ac.kr/*"],
+			"js": ["index.js"],
+			"run_at": "document_end"
+		}
+	],
+	"icons": {
+		"16": "/assets/16.png",
+		"32": "/assets/32.png",
+		"48": "/assets/48.png",
+		"128": "/assets/128.png"
+	}
+}
