@@ -57,7 +57,7 @@ div#container div#helpbox {
 }
 
 div#container::-webkit-scrollbar {
-	display: none; /* Chrome, Safari, Opera*/
+	display: none;
 }
 
 div#container div#helpbox.hide {
